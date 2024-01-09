@@ -20,10 +20,10 @@ export const Translator = () => {
   }, [translatableValue]);
 
   const getTranslation = () => {
-    if (textareaRef.current.value) {
+    if (textareaRef.current && textareaRef.current.value) {
       axios({
         method: "post",
-        url: "http://127.0.0.1:5001/ai-predict",
+        url: "https://bc0tgfc0-5001.euw.devtunnels.ms/ai-predict",
         data: { request: textareaRef.current.value },
         headers: {
           "Content-Type": "application/json; charset=utf-8",
@@ -82,7 +82,7 @@ export const Translator = () => {
   }
 
   let timer = useRef(new dynamicTimer());
-  let textareaRef = useRef(null);
+  let textareaRef = useRef<HTMLTextAreaElement>(null);
 
   return (
     <div className="flex flex-col justify-center">
