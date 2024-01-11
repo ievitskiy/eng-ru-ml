@@ -23,7 +23,7 @@ export const Translator = () => {
     if (textareaRef.current && textareaRef.current.value) {
       axios({
         method: "post",
-        url: "https://bc0tgfc0-5001.euw.devtunnels.ms/ai-predict",
+        url: "https://hlsjn6q7-5001.euw.devtunnels.ms/ai-predict-eng-ru",
         data: { request: textareaRef.current.value },
         headers: {
           "Content-Type": "application/json; charset=utf-8",
