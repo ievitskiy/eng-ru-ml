@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"),
+    url("../../../shared/fonts/Inter/static/Inter-Regular.ttf")
+      format("truetype");
+}
+
+.headerApps {
+  font-family: "Inter", sans-serif;
+  font-size: calc(var(--index) * 0.6);
+}
+
+.headerLogo {
+  font-family: "Inter", sans-serif;
+  font-size: calc(var(--index) * 1.7);
+}

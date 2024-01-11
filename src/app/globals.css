@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+}
+
+body {
+  background-color: #4a5f5e;
+}
